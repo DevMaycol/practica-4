@@ -1,0 +1,208 @@
+
+.btn-nav{
+  background: transparent;
+  color: #fff;
+  display: none ;
+  cursor: pointer;
+  border: none;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+#desactive-button-nav{
+  z-index: 1;
+}
+
+
+@media screen and (max-width: 375px) {
+  .section-navbar{
+    padding-top: 30px !important;
+  }
+  .section-navbar .wraper{
+    width: 100%;
+    padding: 0 19px;
+  }
+  .logotipo{
+    width: 100%;
+    height: 100%;
+  }
+  .logotipo img{
+    width: 147px;
+    height: 26px;
+  }
+  .btn-nav{
+    display: block;
+  }
+  .contect-phrase .phrase{
+    font-size: 41.2px ;
+  }
+  .navbar,
+  .list-nav{
+    justify-content: start ;
+    flex-direction: column;
+  }
+  .nav .list-none{
+    display: none;
+    left: 0;
+  }
+  .wraper .header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .section-navbar{
+    background: url('../images/mobile/image-hero.jpg') !important;
+    background-size: cover !important;
+  }
+  .content-navbar .contect-phrase {
+    width: 100% ;
+    height: 43vh ;
+    padding: 30px 22px ;
+    border: 2px solid #fff;
+  }
+  .nav-mobile-active{
+    transform: translateX(0) !important;
+    transition-duration: .5s;
+  }
+  .nav-mobile{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding-top: 5px;
+    z-index: 1;
+    transform: translateX(100%);
+    transition-duration: .5s;
+  }
+  .mt-2{
+    margin-top: 1.5rem;
+  }
+  .navbar-mobile{
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }  
+  .navbar-mobile .nav{
+    width: 35px;
+  }
+  .navbar-mobile .nav .list-nav .item a{
+    font-family: 'Josefin Sans' !important;
+    font-weight: 200;
+    font-size:20px;
+    color:#F8F8F8;
+  } 
+  .navbar-mobile .nav .list-nav .item{
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  .section-about{
+    margin: 50px 0;
+  }
+  .section-about .about{
+    background-image: url('../images/mobile/image-interactive.jpg') !important;
+    background-size: contain;
+    height: 100vh;
+  }
+  .about .content-about{
+    width: 100%;  
+    padding: 0;
+
+  }
+  .content-about .description-about .title{
+    font-family: var(--tipo-letra-dos);
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+  .content-about .description-about .description{
+    text-align: center;
+  }
+  /* SECTION CARS */
+  .content-creations .card-criations{
+    grid-template-columns: 1fr;
+    padding: 65px 0;
+  }
+  .content-creations .card-desktop{
+    height: 130px;
+  }
+  .content-creations .card-desktop h2{
+    bottom: 25px;
+    left: 21px;
+    font-size: 25px;
+    padding-right: 50%;
+  }
+  .section-creations{
+    position: relative;
+  }
+
+  .section-creations .content-creations .title-button-creations .title{
+  font-size: 49px;
+  position: absolute;
+  font-size: 49px;
+  }
+
+  .section-creations .content-creations .title-button-creations .button{
+    position: absolute;
+    bottom: 0px;
+  }
+  .section-creations .content-creations .title-button-creations{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  
+  
+ /* FIN SECTION CARS */
+ .footer {
+  height: 460px !important;
+  position: relative;
+}
+.footer .logo-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 83%;
+  height: 310px;
+  align-items: center;
+}
+
+.logo-redes .logotipo{
+  padding-right: 20px;
+}
+.logo-redes .logotipo img{
+  width: 128px;
+  padding-top: 20px;
+}
+.nav-footer {
+  width: 100%;
+  height: 360px;
+
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+}
+.nav-footer .nav .list-nav{
+  padding-right: 20px;
+}
+.nav-footer .nav .list-nav .item{
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+}
+
+ 

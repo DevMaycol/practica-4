@@ -1,0 +1,248 @@
+:root{
+  --tipo-letra-uno: Alata;
+  --tipo-letra-dos: Josefin Sans;
+}
+
+.section-navbar{
+  width: 100%;
+  height: 100vh;
+  padding-top: 47px;
+  background: url('../images/desktop/image-hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navbar,
+.list-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar{
+  width: 100%;
+  height: 33px;
+}
+.nav{
+  width: 35%;
+}
+.list-nav{
+  list-style: none;
+}
+.list-nav li a{
+  text-decoration:dotted;
+  font-family: var(--tipo-letra-uno) ;
+  font-weight: 400;
+  color:#fff;
+}
+.item{
+  width: 30px;
+  position: relative;
+  
+}
+.item:hover::before{
+  display: block;
+}
+.item::before{
+  content: "";
+  width: 150%;
+  margin: auto;
+  left: 5px;
+  display: none;
+  height: 2px;
+  position: absolute;
+  bottom: -7px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+  
+
+/* CONTENIDO DEL NABAR */
+.content-navbar{
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+}
+.contect-phrase{
+  width: 58%;
+  border: 4px solid #fff;
+  height: 44vh;
+  padding: 32px 52px;
+}
+.phrase{
+  font-family: var(--tipo-letra-dos);
+  font-weight: 300;
+  color: #fff;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+/* SECTION ABOUT */
+
+.section-about{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.about{
+  width: 100%;
+  height: 72vh;
+  background-image: url('../images/desktop/image-interactive.jpg');
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+}
+.content-about{
+  width: 643px;
+  height: 311px;
+  position: absolute;
+  background-color: #fff;
+  padding: 82px 20px 0 85px;
+}
+
+
+.description-about .title{
+  font-family: var(--tipo-letra-dos);
+  font-weight: 300;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.description-about .description{
+  font-family: var(--tipo-letra-dos);
+  font-weight: 400;
+  font-size: 17px;
+  color: rgb(0 0 0);
+  padding-top: 22px;
+  line-height: 22px;
+
+}
+/* SECTION CREATIONS */
+
+.section-creations{
+  width: 100%;
+  height: auto;
+  
+}
+ .title-button-creations{
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-button-creations .title{
+  font-family: var(--tipo-letra-dos);
+  font-weight: 400;
+  font-size: 50PX;
+  
+}
+.title-button-creations .button{
+  width: 200px;
+  height: 40px;
+  font-family: var(--tipo-letra-uno);
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: uppercase;
+  border: 1px solid black;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 1s;
+}
+.title-button-creations .button:hover{
+  background-color: black;
+  color: #fff;
+  border: none;
+  transition: 1s;
+}
+.card-criations{
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 60px;
+}
+ .card-desktop{
+  width: 100%;
+  height: 510px;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+
+}
+ .card-desktop h2{
+  font-family: var(--tipo-letra-dos);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 40px;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fff;
+  transition: .5s;
+}
+ .card-desktop .img-card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+ .card-desktop:hover .img-card{
+  filter: opacity(30%);
+}
+ .card-desktop:hover h2{
+  color: #191511;
+}
+
+
+
+/* STYLE FOOTER */
+
+.footer{
+  width: 100%;
+  height: 190px;
+  background-color: black;
+  padding-top: 60px;
+  margin-top: 40px;
+}
+.footer .logo-redes{
+  display: flex;
+  justify-content:space-between ;
+  margin-bottom: 35px;
+} 
+.footer .logo-redes .redes-sociales{
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .logo-redes .redes-sociales a:hover{
+  border-bottom: 3px solid rgb(206, 202, 202);  
+  border-radius: 2px;
+  transition: 200ms;
+}
+.nav-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-footer .nav .list-nav{
+  padding-bottom: 30px;
+}
+ .list-nav .item{
+  text-decoration:dotted;
+  font-family: var(--tipo-letra-uno) ;
+  font-weight: 400;
+  font-size: 15px;
+}
+.nav-footer .nav .list-nav .item a{
+  color:rgb(206, 202, 202);
+}
+
+.nav-footer .content-footer{
+  font-family: var(--tipo-letra-uno) ;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(128, 128, 128); 
+}
